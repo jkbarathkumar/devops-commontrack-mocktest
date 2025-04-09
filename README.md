@@ -138,3 +138,11 @@ The read-write layer directory on the host.
 
 Mention the command you'd use at each step.
 Check in all files including images and code into quetion4 folder in devops-commontrack-mocktest repository
+
+
+
+
+
+
+5.![image](https://github.com/user-attachments/assets/437cf2e8-105e-4004-b1a2-836b2d37e1e0)
+
