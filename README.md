@@ -74,7 +74,57 @@ sample html code you can use:
 2.
 ![image](https://github.com/user-attachments/assets/3b274119-e3ec-49ef-90ba-ff2557701b1d)
 
-4.
+
+
+
+
+Creating and using a shared library in Jenkins to standardize build
+
+You are a devops engineer in a company managing multiple services. Each team writes their own Jenkinsfile, but all of them share a common set of actions:
+	cloning the git repo
+	running unit tests
+	deploying to a given environment
+
+Instead of duplicating this logic in each Jenkinsfile, you've been asked to create a Jenkins shared library to centralize and standardize
+Step 1:
+Create a new git repo for the shared library
+Step 2:
+Add pipeline login in vars/ Folder example (commonBuild.groovy)
+Groovy sample code:
+def call() {
+	stage('Checkout'){
+		checkout scm
+}
+}
+stage('Unit Tests'){
+
+	echo 'Running unit tests....'
+	sh './gradlew test'
+}
+
+Step 3:
+Register the shared library in Jenkins
+Step 4:
+Use the shared library in a Jenkins file 
+Step 5:
+Build it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.
 DOcker & container Internals
 
 For the code below:
