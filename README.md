@@ -71,6 +71,8 @@ sample html code you can use:
  <h1> Welcome to {{inventory_hostname}} in {{env}} environment!</h1>
 </body>
 </html>
+2.
+![image](https://github.com/user-attachments/assets/3b274119-e3ec-49ef-90ba-ff2557701b1d)
 
 4.
 DOcker & container Internals
